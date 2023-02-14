@@ -2,8 +2,7 @@
 
 body {
     color: #2b2b2b;
-    font-family: 'Source Sans Pro', sans-serif;
-    
+    font-family: 'Source Sans Pro', sans-serif; 
 }
 /*****GRID*****/
 .full-width {
@@ -11,18 +10,16 @@ body {
     overflow: auto;
     width: 1200px;
 }
-.half-width {
-    
+.half-width { 
     float: left;
     width: 600px;
 }
-.third-width {
-  
+.third-width { 
     float:left;
     width:400px;
 }
 /*****HEADER*****/
-  header{
+header{
     background: rgb(62, 90, 69);
     background-position: center;
     background-size: cover;
@@ -36,7 +33,7 @@ h1 {
 }
 nav {
     float: right; 
-    padding: 75px 0px;
+    padding: 35px 0px;
 }
 nav ul li{
     display: inline-block;
