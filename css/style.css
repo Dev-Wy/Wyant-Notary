@@ -1,5 +1,7 @@
 /*****BASE STYLES*****/
-
+html{
+    font-size:16px;
+}
 body {
     color: #2b2b2b;
     font-family: 'Source Sans Pro', sans-serif; 
@@ -7,55 +9,63 @@ body {
 /*****GRID*****/
 .full-width {
     margin: 0 auto;
-    overflow: auto;
-    width: 1200px;
+    overflow: hidden;
+    width: 100%;
+}
+.header-half-width {
+    float: left;
+    width: 50%;
 }
 .half-width { 
-    float: left;
-    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
 }
 .third-width { 
-    float:left;
-    width:400px;
+    margin: 0 auto;
+    overflow: auto;
+    width: 100%;
 }
 /*****HEADER*****/
 header{
-    background: rgb(62, 90, 69);
+    background: rgb(64, 108, 75);
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 400px;
+    width: 100%;
 }
 h1 {
-    color: #cdcdcc;
+    color: #9f9e9e;
     font-family:'Lora', serif;
-    font-size: 20px;
-    padding: 35px 0 55px 25px;
+    font-size: 1.2em;
+    padding: 20% 0 10% 10%;
 }
 nav {
     float: right; 
-    padding: 35px 0px;
+    padding: 20% 10% 5% 10%;
 }
 nav ul li{
     display: inline-block;
 }
 nav ul li a {
-    font-size: 20px;
-    color: #9f9e9e;
+    font-size: 1em;
+    color: #aaa8a8;
     padding-left: 80px; 
     text-decoration: none;
     text-transform: uppercase;
 }
 header h2 {
     clear: both;
-    color: #9b9b9b;  
+    color: #cdcdcc;  
     font-family: 'Lora', serif;
-    font-size: 72px;
-    line-height: 80px;
-    padding: 20px 0 20px 25px;
-    width: 1000px;
+    font-size: 1.4em;
+    line-height: 43px;
+    padding: 0% 0 0% 5%;
+    width: 100%;
 }
 header h2 span {
     color: #2b2b2b;
+    font-size: 2.3em
 }
 
 /*****ABOUT*****/
@@ -64,23 +74,24 @@ header h2 span {
 }
 #about h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 1.9em;
     padding-left: 25px; 
 }
 #about p {
     color:#7f7f7f;
-    font-size: 21px;
+    font-size: 1.2em;
     line-height: 40px;
     padding-left: 25px;
     padding-right:50px;
 }
-/*****WORK*****/
+/*****SERVICES*****/
 #services{
     background-color: rgb(187, 165, 165);
     text-align: center;
+    box-sizing: border-box;
 }
 #services .full-width {
-    padding: 115px 0;
+    padding: 80px 0 30px 0;
 }
  
 #services img {
@@ -88,67 +99,138 @@ header h2 span {
     width: 290px;
 }
 #services h3 {
-    font: 24px;
+    font: 1.9em;
     line-height: 32px;
     margin: 0 auto;
     width: 230px;   
 }
  
 #services p {  
-    font: 18px;
+    font: 1.5em;
     font-family: 'Lora', serif;
     line-height: 30px;
     padding: 0 50px;
+    padding-bottom: 18%;
 }
 /*****CONTACT*****/
 #contact{
     background-color: #ebebeb;
-    text-align: left;
+    text-align: center;
 }
 #contact .full-width {
     padding: 110px 0;    
 }
 #contact img#personal-img {
     border: 12px solid #ffffff;
-    margin-left: 25px;
-    width: 400px;
+    margin-bottom: auto;
+    width: 80%;
+    
 }
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul, a {
-    padding-left: 15px;
+#contact h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.7rem;
+    line-height: 44px;
 }
-#contact #envelope {
-    padding: 0 10px 0 115px;
+#contact h3 span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.0rem;
+    line-height: 44px;
 }
+
 #contact h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 2.5rem;
     line-height:44px;
 }
-#contact #email-header{
-    font-size: 32px;
-    font-weight: normal;
-    line-height: 44px;
-    margin: -30px 0 5px 0;
+#contact h1 {
+    font-family: 'Poppins', sans-serif;
+    line-height:10px;
+    padding:5% 0 0 0;
 }
-#contact #socialmedia-header {
-    font-size: 29px;
-    font-weight: bold;
-    line-height:44px;
-    margin: 40px 0 0 0;
-}
+
 #contact a {
     color:#c49075;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.8em;
+    display: block;
     text-decoration: none;
+    text-align: center;
  }
-#contact ul {
-    list-style: none;
+ #contact ul {
+     display: flex;
+     justify-content: space-around;
+     list-style: none;
+     padding: 10% 0 0 0;
+ }
+ #contact ul li {
+    display: center;
+ }
+#contact img {
+    border: 1px solid #c49075;
+    margin: 10% 10%;
+    width: 100px;
+    text-align:center;
 }
-#contact ul li {
-     display: inline-block;
+
+#contact img#Wyant-Notary-img {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border: none;
 }
-#contact ul img {
-    padding-right: 40px;
-    width: 60px;
+/*---------- TABLET ------------*/
+@media (min-width: 768px) {
+    #contact a {
+        font-size: 2.2em;
+    }
+    #contact img#Wyant-Notary-img {
+        width: 40%;
+        text-align: center;
+    }
+    #contact img {
+        width: 160px;
+    }
+}
+/*--------- DESKTOP -----------*/
+@media (min-width: 1200px) {
+    .full-width {
+        width: 100%;
+    }
+    .half-width {
+       float:left;
+       width: 50%;
+    }
+    .third-width {
+        float:left;
+        width: 30%;
+    }
+    header{
+        height:520px;
+    }
+    nav {
+        padding: 10% 10% 5% 10%;
+    }
+    header h1 {
+        padding: 10% 0 10% 10%;
+    }
+    header h2 {
+        font-size: 2.8em;
+        line-height: normal;
+    }
+    header h2 span {
+        font-size: 2.5em;
+    }
+    #services p {
+        font-size: 20px;
+    }
+    #contact h2{
+        font-size: 3.9em;
+        padding: 60px 0 30px 0;
+        line-height: 55px;
+    }
+    #contact h1{
+        line-height: 44px;
+    }
+    
 }
