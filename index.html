@@ -3,36 +3,50 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1"
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="">
     <title>Wyant Mobile Notary</title>
     <link rel="stylesheet" href="css\normalize.css">
     <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="full-width">
-            <div class="header-half-width">
-                <h1>Proudly Serving the LGBTQA Community of<br>Eastern PA</h1>
+            <div class="tagline">
+                <h1>Proudly Serving the Homebound Community of<br>Eastern PA</h1>
             </div>
-            <div class="header-half-width">
-                <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="navBar">
+                <div class="topnav">
+                    <a href="#home" class="active"><img src="img/WyantGrayLogo.png" id="Wyant-Notary-img" alt="Wyant Mobile Notary Icon">
+                    </a>
+                    <div id="myLinks">
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </div>
-            <div>
-                <h2>Welcome to<br><span>Wyant Mobile Notary</span><br>We meet you where you are</h2>
-            </div>
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h3>Welcome to</h3>
+                    <h2>Wyant Mobile Notary</h2>
+                    <h3>We meet you where you are</h3>
+                </div>
+            </div>    
         </div>
     </header>
     <main>
         <section id="about">
             <div class="full-width">
+                <div class="about">
+                    <h1>About</h1>
+                </div>
                 <div class="half-width">
                     <h2>My Area</h2>
                     <p>I offer my services within Bucks county and other local communities. The best part is that I travel to
@@ -53,21 +67,21 @@
                 <div class="third-width">
                     <img src="img/family.jpg" alt="Family">
                     <h3>For Your Maturing Needs</h3>
-                    <p>From Wills to Power of Attorney, I will meet you at your residence so there is no need to
+                    <p>From Wills to Power of Attorney, I will meet you at your home so there is no need to
                         transport
                         loved ones from their place of comfort.</p>
                 </div>
-                <div class="third-width">
-                    <img src="img/familybaby.jpg" alt="Dads and their child">
-                    <h3>For Your Children</h3>
-                    <p>Passport Parental Consent, Parental Consent for Travel, Temporary Gardianship Agreements, and
-                        Living Trusts. I am here for life's adventures. </p>
+               <div class="third-width">
+                    <img src="img/homebound.jpg" alt="Woman in wheelchair cooking">
+                    <h3>For Everyone</h3>
+                    <p> Let nothing stop you or your loved on from a fresh start. Wyant Mobile Notary comes to your home to help with Name Changes, Bills of Sale, Contracts, Signature Witnessing, and more.</p>
                 </div>
                 <div class="third-width">
-                    <img src="img/trans.jpg" alt="Hands infront of a pride flag">
-                    <h3>For Yourself</h3>
-                    <p> I am excited to help you on your way to new beginnings with Name Changes, Bills of Sale, Contracts, Signature Witnessing, and more.</p>
+                    <img src="img/retirement.jpg" alt="Two nurses helping a client">
+                    <h3>For Companies who Care</h3>
+                    <p>Book Wyant Mobile Notary for your Retirement Home, Residental Center, or Nursing Home. I will arrage a time for the clients in your care to recieve the legal support they need without leaving your facility. </p>
                 </div>
+
             </div>
         </section>
     </main>
@@ -76,19 +90,22 @@
         <div class="full-width">
             <div class="half-width">
                 <img src="img/D.jpg" id="personal-img" alt="D Wyant image">
-                <h3>D Wyant<br><span>Notary Public</span></h3>
+                <h3>Jake Wyant<br><span>Notary Public</span></h3>
             </div>
             <div class="half-width">
                 <h2>Contact for a free estimate</h2>
-                <h1><a href="mailto:wyantnotary@gmail.com?&cc=wyant.deborah@gmail.com">WyantNotary@gmail.com</a></h1>
                 <ul>
+                    <li><a href="mailto:wyantnotary@gmail.com"><img src="img/email-icon.png" alt="email icon"></a></li>
                     <li><a href="https://www.facebook.com/Wyant-Mobile-Notary-101939288546982"><img src="img/facebook-icon.jpg" alt="facebook icon"></a></li>
-                    <li><img src="img/QR-code-Wyant-Mobile-Notary.png" id="QR-code-img" alt="QR code for Wyant Mobile Notary"></li>
+                    <li><a href="https://www.linkedin.com/company/wyant-mobile-notary"><img src="img/linkedin-icon.png" alt="LinkedIn icon"></a></li>
                 </ul>
-            <div class="logo">
-                <img src="img/WyantGrayLogo.png" id="Wyant-Notary-img" alt="Wyant Mobile Notary Icon">
-            </div>
-            <div></div>
+                <div class="dev-wy">
+                    <p>Copyright ©</p>  
+                    <div class="logo">     
+                        <img src="img/WyantGrayLogo.png" id="Wyant-Notary-img" alt="Wyant Mobile Notary Icon">
+                        <a href="https://www.linkedin.com/company/dev-wy"><img src="img/close-dev-wy-icon.png" alt="Dev-Wy Icon"></a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

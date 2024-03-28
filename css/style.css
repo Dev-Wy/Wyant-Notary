@@ -12,9 +12,15 @@ body {
     overflow: hidden;
     width: 100%;
 }
-.header-half-width {
-    float: left;
-    width: 50%;
+.tagline {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+.navBar {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
 }
 .half-width { 
     margin: 0 auto;
@@ -28,19 +34,78 @@ body {
 }
 /*****HEADER*****/
 header{
-    background: rgb(64, 108, 75);
     background-position: center;
     background-size: cover;
-    height: 400px;
+    height: 300px;
     width: 100%;
 }
-h1 {
-    color: #9f9e9e;
-    font-family:'Lora', serif;
-    font-size: 1.2em;
-    padding: 20% 0 10% 10%;
+.tagline {
+    background-color: rgb(65, 99, 68);
 }
-nav {
+h1 {
+    color:#bebebc;
+    font-family:'Lora', serif;
+    font-size: 1em;
+    padding: 2% 5% 2% 5%;
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(65, 99, 68);
+    position: relative;
+}
+ .topnav #myLinks {
+    display: none;
+ }
+ .topnav a {
+    color:#bebebc;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+ }
+ .topnav a.icon {
+    background: black;
+    display: block;
+    padding: 14px 16px; 
+    position: absolute;
+    right: 0;
+    top: 0;
+ }
+ .topnav a:hover {
+    background-color: #ddd;
+    color:#2b2b2b;
+ }
+ .active {
+    background-color:  rgb(187, 165, 165);
+ }
+ .active img {
+    padding-left: 5%;
+    height: 50px;
+ }
+ .hero-image {
+    background:url("../img/DBlurredSignature.jpg") no-repeat;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    height:50%;
+    width:100%;
+    display: flex;
+    justify-content:right;
+    flex-flow:row wrap;
+    text-align: right;
+    margin-bottom: 50px;
+}
+.hero-text {
+    padding-right: 5%;
+}
+.hero-text h3{
+    color:#323534;
+}
+.hero-text h2{
+ color:#070707;
+ font-size: 2.3em;
+}
+/*nav {
     float: right; 
     padding: 20% 10% 5% 10%;
 }
@@ -53,7 +118,7 @@ nav ul li a {
     padding-left: 80px; 
     text-decoration: none;
     text-transform: uppercase;
-}
+}*/
 header h2 {
     clear: both;
     color: #cdcdcc;  
@@ -65,12 +130,16 @@ header h2 {
 }
 header h2 span {
     color: #2b2b2b;
-    font-size: 2.3em
+    font-size: 2.3em;
 }
 
 /*****ABOUT*****/
 #about .full-width {
-    padding: 80px 0px;
+    padding: 60px 0px;
+}
+#about .full-width h1{
+    color:rgb(65, 99, 68);
+    font-size: 2.2em;
 }
 #about h2 {
     font-family: 'Lora', serif;
@@ -122,9 +191,9 @@ header h2 span {
 }
 #contact img#personal-img {
     border: 12px solid #ffffff;
+    position: center;
     margin-bottom: auto;
-    width: 80%;
-    
+    width: 60%;
 }
 #contact h3 {
     font-family: 'Poppins', sans-serif;
@@ -167,18 +236,24 @@ header h2 span {
  }
 #contact img {
     border: 1px solid #c49075;
-    margin: 10% 10%;
-    width: 100px;
+    margin: 10% 2% 10% 2%;
+    width: 50px;
     text-align:center;
 }
-
+#contact .logo {
+    margin: 10% 2% 10% 2%;
+    width: 100px;
+    position:center;
+}
 #contact img#Wyant-Notary-img {
     width: 100%;
-    text-align: center;
+    position: center;
     display: block;
     margin: auto;
+    padding-bottom: 20%;
     border: none;
 }
+
 /*---------- TABLET ------------*/
 @media (min-width: 768px) {
     #contact a {
@@ -206,13 +281,13 @@ header h2 span {
         width: 30%;
     }
     header{
-        height:520px;
+        height:300px;
     }
     nav {
         padding: 10% 10% 5% 10%;
     }
     header h1 {
-        padding: 10% 0 10% 10%;
+        padding: 2% 0 2% 7%;
     }
     header h2 {
         font-size: 2.8em;
