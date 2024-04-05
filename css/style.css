@@ -1,5 +1,5 @@
 /*****BASE STYLES*****/
-html{
+html {
     font-size:16px;
 }
 body {
@@ -35,7 +35,7 @@ body {
 }
 
 /*****HEADER*****/
-header{
+header {
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -54,37 +54,40 @@ h1 {
     overflow: hidden;
     background-color: rgb(65, 99, 68);
     position: relative;
+    align-items: end;
 }
- .topnav #myLinks {
+.topnav #myLinks {
     display: none;
- }
- .topnav a {
+    text-align: right;
+    margin: 10px 0 10px 0;
+}
+.topnav a {
     color:#bebebc;
     text-decoration: none;
     font-size: 1em;
     display: block;
-    padding: 1px 0 1px 25px;
+    padding: 5px 25px 5px 25px;
  }
- .topnav a.icon {
+.topnav a.icon {
     background: black;
     display: block;
-    padding: 16px 16px; 
+    padding: 19px 18px; 
     position: absolute;
     right: 0;
     top: 0;
  }
- .topnav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color:#2b2b2b;
  }
- .active {
+.active {
     background-color:  rgb(187, 165, 165);
  }
- .active img {
+.active img {
     padding-left: 0px;
     height: 42.5px;
  }
- .hero-image {
+.hero-image {
     background:url("../img/DBlurredSignature.jpg") no-repeat;
     opacity: 0.8;
     background-position: center;
@@ -99,11 +102,13 @@ h1 {
 }
 .hero-text {
     padding-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.hero-text h3{
+.hero-text h3 {
     color:#202221;
 }
-.hero-text h2{
+.hero-text h2 {
  color:#070707;
  font-family: 'Lora', serif;
  font-size: 2.2em;
@@ -113,16 +118,14 @@ h1 {
 
 /*****ABOUT*****/
 #about .full-width {
-    padding: 60px 0px;
-}
-#about .full-width h1{
-    color:rgb(65, 99, 68);
-    font-size: 2.2em;
+    padding: 30px 0px;
+    margin-top: 80px;
 }
 #about h2 {
     font-family: 'Lora', serif;
     font-size: 1.9em;
     padding-left: 25px; 
+    margin-top: 60px;
 }
 #about p {
     color:#7f7f7f;
@@ -133,37 +136,37 @@ h1 {
 }
 
 /*****SERVICES*****/
-#services{
+#services {
     background-color: rgb(187, 165, 165);
     text-align: center;
     box-sizing: border-box;
 }
 #services .full-width {
+    margin-top: 20px;
     padding: 80px 0 30px 0;
 }
 #services img {
-    padding-bottom: 30px;
+    padding: 30px 0 30px 0;
     width: 70%;
 }
 #services h3 {
     font-family: 'Lora', serif;
     text-align: left;
     font: 1.9em;
-    line-height: 32px;
-    padding: 0 50px;
+    padding: 0 55px;
     width: 70%;   
 }
 #services p {  
     font: 1.5em;
     line-height: 30px;
     text-align: left;
-    padding: 0 50px;
+    padding: 0 55px;
     padding-bottom: 18%;
     width: 70%;
 }
 
 /*****CONTACT*****/
-#contact{
+#contact {
     background-color: #ebebeb;
     text-align: center;
 }
@@ -175,7 +178,7 @@ h1 {
     font-size: 2.3em;
     line-height: 44px;
 }
-#contact h3 span{
+#contact h3 span {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
     line-height: 44px;
@@ -212,7 +215,7 @@ h1 {
  }
 #contact ul li {
     padding: 0 5% 0 5%;
- }
+}
 #contact img {
     width: 50px;
     text-align:center;
@@ -256,13 +259,17 @@ footer img#Wyant-Notary-img {
 
 /*---------- TABLET ------------*/
 @media only screen and (min-width:768px) and (max-width:1199px){
-     .third-width {
+    
+    /***GRID***/
+    .third-width {
         width: 40%;
         margin-left: 0;
         margin-right: 0;
         padding: 0 5% 0 5%;
         align-items: center;
     }
+
+    /***SERVICES***/
     #services {
         text-align: center;
         width: 100%;
@@ -287,6 +294,8 @@ footer img#Wyant-Notary-img {
         padding-right: 0;
         width:100%;
     }
+
+    /***CONTACT***/
     #contact img {
        width: 80px; 
     }
@@ -298,6 +307,8 @@ footer img#Wyant-Notary-img {
 
 /*--------- DESKTOP -----------*/
 @media only screen and (min-width: 1200px) {
+    
+    /***GRID***/
     .full-width {
         width: 100%;
     }
@@ -309,7 +320,9 @@ footer img#Wyant-Notary-img {
         float:left;
         width: 30%;
     }
-    header{
+
+    /***HEADER***/
+    header {
         height:300px;
     }
     nav {
@@ -322,17 +335,21 @@ footer img#Wyant-Notary-img {
     header h2 span {
         font-size: 2.5em;
     }
-    #services .full-width{
+
+    /***SERVICES***/
+    #services .full-width {
         display: flex;
         justify-content:space-between;
         flex-flow:row wrap;
     }
-    #contact h2{
+
+    /***CONTACT***/
+    #contact h2 {
         font-size: 3em;
         padding: 40px 0 30px 0;
         line-height: 55px;
     }
-    #contact h1{
+    #contact h1 {
         line-height: 44px;
     }
     #contact img {
