@@ -28,27 +28,27 @@ body {
     overflow: hidden;
     width: 100%;
 }
-.third-width { 
-    margin: 0 auto;
-    overflow: auto;
-    width: 100%;
-}
 
 /*****HEADER*****/
 header {
     background-position: center;
     background-size: cover;
-    height: 300px;
+    max-height: 300px;
     width: 100%;
 }
 .tagline {
     background-color: rgb(65, 99, 68);
+    padding-top: 5px;
 }
 h1 {
     color:#bebebc;
     font-family:'Lora', serif;
-    font-size: 1em;
+    font-size: .5em;
     padding: 10px 0px 10px 25px;
+}
+header h1 span {
+    color:  rgb(65, 99, 68);
+    font-size: .05em;
 }
 .topnav {
     overflow: hidden;
@@ -56,10 +56,13 @@ h1 {
     position: relative;
     align-items: end;
 }
-.topnav #myLinks {
+.topnav #myLinks{
     display: none;
     text-align: right;
     margin: 10px 0 10px 0;
+}
+.topnav #myLinks.hidden {
+    display:none;
 }
 .topnav a {
     color:#bebebc;
@@ -70,8 +73,7 @@ h1 {
  }
 .topnav a.icon {
     background: black;
-    display: block;
-    padding: 19px 18px; 
+    padding: 14.5px 18px; 
     position: absolute;
     right: 0;
     top: 0;
@@ -99,6 +101,7 @@ h1 {
     justify-content:right;
     flex-flow:row wrap;
     text-align: right;
+    margin-bottom:50px;
 }
 .hero-text {
     padding-right: 5%;
@@ -107,6 +110,7 @@ h1 {
 }
 .hero-text h3 {
     color:#202221;
+    padding-right: 7%;
 }
 .hero-text h2 {
  color:#070707;
@@ -115,63 +119,75 @@ h1 {
  padding-right: 0%;
  width: 100%;
 }
+.hero-image img {
+    max-width: 40%;
+}
 
 /*****ABOUT*****/
 #about .full-width {
-    padding: 30px 0px;
-    margin-top: 80px;
+    padding: 50px 25px;
+    margin: 50px 15px;
 }
 #about h2 {
-    font-family: 'Lora', serif;
-    font-size: 1.9em;
     padding-left: 25px; 
-    margin-top: 60px;
 }
 #about p {
     color:#7f7f7f;
     font-size: 1em;
-    line-height: 40px;
     padding-left: 25px;
     padding-right:50px;
 }
 
-/*****SERVICES*****/
-#services {
+/*****CLIETNTS*****/
+#clients {
     background-color: rgb(187, 165, 165);
     text-align: center;
     box-sizing: border-box;
-}
-#services .full-width {
-    margin-top: 20px;
-    padding: 80px 0 30px 0;
-}
-#services img {
-    padding: 30px 0 30px 0;
-    width: 70%;
-}
-#services h3 {
-    font-family: 'Lora', serif;
-    text-align: left;
-    font: 1.9em;
-    padding: 0 55px;
-    width: 70%;   
-}
-#services p {  
-    font: 1.5em;
-    line-height: 30px;
-    text-align: left;
-    padding: 0 55px;
-    padding-bottom: 18%;
-    width: 70%;
+    padding: 110px 70px;
+    justify-content: space-around;
 }
 
-/*****CONTACT*****/
+/*****SERVICES*****/
+#services {
+    padding: 110px 50px;
+}
+#services h3{
+    text-align: left;
+    padding: 25px 0px 10px 0px
+}
+#services p{
+    text-align: left;
+}
+#services thead{
+    text-align: left;
+}
+#services tbody{
+    text-align: left;
+}
+
+/****CONTACT*****/
+
 #contact {
-    background-color: #ebebeb;
+    background-color:#ebebeb;
     text-align: center;
 }
 #contact .full-width {
-    padding: 110px 0;    
+    padding: 110px 0;  
+}
+#contact .half-width-2 {
+    display:flex;
+    justify-content: center;  
+}
+#contact h1 {
+    font-family: 'Poppins', sans-serif;
+    line-height:10px;
+    padding:5% 0 0 0;
+}
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.1em;
+    line-height:44px;
+    padding: 0 25px 25px 25px;
 }
 #contact h3 {
     font-family: 'Lora', serif;
@@ -183,28 +199,17 @@ h1 {
     font-size: 1.3rem;
     line-height: 44px;
 }
-#contact h2 {
-    font-family: 'Lora', serif;
-    font-size: 2.1em;
-    line-height:44px;
-    padding: 0 25px 25px 25px;
-}
-#contact h1 {
-    font-family: 'Poppins', sans-serif;
-    line-height:10px;
-    padding:5% 0 0 0;
-}
 #contact p {
     font-family: 'Poppins', sans-serif;
     line-height:10px;
     padding:25% 0 0 0;
 }
 #contact a {
-    color: rgb(187, 165, 165);
     font-weight: bold;
     display: block;
     text-decoration: none;
     text-align: center;
+    margin-bottom: 110px;
  }
 #contact ul {
      display: flex;
@@ -217,17 +222,22 @@ h1 {
     padding: 0 5% 0 5%;
 }
 #contact img {
-    width: 50px;
+    width: 30px;
     text-align:center;
 }
 #contact img#personal-img {
-    margin-bottom: auto;
-    width: 55%;
-    border: 2px solid #c49075;
+    margin-bottom: 10px;
+    padding: 5px 0px 10px 5px;
+    width: 80%;
+}
+#contact .calendly {
+    padding: 5px; 
+    width:100%;
 }
 
 /*****FOOTER*****/
 footer {
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 footer p {
@@ -244,14 +254,14 @@ footer ul {
     align-items: center;
 }
 footer ul li {
-   padding: 0 5% 0 5%;
+   padding: 0 1% 0 1%;
 }
 footer img {
-    width: 50px;
+    width: 30px;
     text-align:center;
 }
-footer img#Wyant-Notary-img {
-    width: 75px;
+footer img#Wyant-Notary-img3 {
+    width: 50px;
     display: block;
     padding-bottom: 20%;
     border: none;
@@ -259,16 +269,18 @@ footer img#Wyant-Notary-img {
 
 /*---------- TABLET ------------*/
 @media only screen and (min-width:768px) and (max-width:1199px){
-    
-    /***GRID***/
-    .third-width {
-        width: 40%;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0 5% 0 5%;
-        align-items: center;
+     /***GRID***/
+    .half-width {
+        float:left;
+        width: 50%;
+     }
+    /***HEADER***/
+    header {       
+        max-height: 450px;
     }
-
+    .navBar {
+        display: hidden;
+    }
     /***SERVICES***/
     #services {
         text-align: center;
@@ -296,12 +308,26 @@ footer img#Wyant-Notary-img {
     }
 
     /***CONTACT***/
-    #contact img {
-       width: 80px; 
+    #contact h2 {
+        font-size: 3em;
+        padding: 40px 0 30px 0;
+        line-height: 55px;
     }
+    #contact h1 {
+        line-height: 44px;
+    }   
+   
     #contact img#Wyant-Notary-img {
         width: 100px;
         text-align: center;
+    }
+    #contact img {
+        width: 30px;
+        text-align:center;
+    }
+    #contact .calendly { 
+        padding: 5px; 
+        width:80%;
     }
 }
 
@@ -323,7 +349,7 @@ footer img#Wyant-Notary-img {
 
     /***HEADER***/
     header {
-        height:300px;
+       max-height:600px;
     }
     nav {
         padding: 10% 10% 5% 10%;
@@ -353,6 +379,17 @@ footer img#Wyant-Notary-img {
         line-height: 44px;
     }
     #contact img {
-        width: 80px;
+        width: 40px;
+    }
+    #contact img#personal-img {
+        margin: 5px 0px 10px 5px;
+        padding: 5px;
+        width: 65%;
+        border: 2px solid #c49075;
+    }
+    #contact .calendly {
+        border: 2px solid #c49075;
+        padding: 5px; 
+        width:80%;
     }
 }
