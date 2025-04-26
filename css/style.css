@@ -56,6 +56,7 @@ header h1 span {
     position: relative;
     align-items: end;
 }
+
 .topnav #myLinks{
     display: none;
     text-align: right;
@@ -64,16 +65,23 @@ header h1 span {
 .topnav #myLinks.hidden {
     display:none;
 }
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow:hidden;
+}
 .topnav a {
-    color:#bebebc;
+    color: black;
+    font-size: 1.3em;
     text-decoration: none;
-    font-size: 1em;
     display: block;
     padding: 5px 25px 5px 25px;
  }
 .topnav a.icon {
     background: black;
-    padding: 14.5px 18px; 
+    color:#bebebc;
+    padding: 5px 10px; 
     position: absolute;
     right: 0;
     top: 0;
@@ -84,10 +92,6 @@ header h1 span {
  }
 .active {
     background-color:  rgb(187, 165, 165);
- }
-.active img {
-    padding-left: 0px;
-    height: 42.5px;
  }
 .hero-image {
     background:url("../img/DBlurredSignature.jpg") no-repeat;
@@ -108,10 +112,22 @@ header h1 span {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+@keyframes slide-left {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
 .hero-text h3 {
     color:#202221;
     padding-right: 7%;
+    animation: slide-left 2.5s ease-in 1s 1 normal forwards;
 }
+
 .hero-text h2 {
  color:#070707;
  font-family: 'Lora', serif;
@@ -121,7 +137,9 @@ header h1 span {
 }
 .hero-image img {
     max-width: 40%;
+    animation: slide-left 2.5s ease-in 1s 1 normal forwards;
 }
+
 
 /*****ABOUT*****/
 #about .full-width {
@@ -136,6 +154,9 @@ header h1 span {
     font-size: 1em;
     padding-left: 25px;
     padding-right:50px;
+}
+#about ul {
+    padding-left: 25px;
 }
 
 /*****CLIETNTS*****/
@@ -174,9 +195,12 @@ header h1 span {
 #contact .full-width {
     padding: 110px 0;  
 }
+#contact .half-width {
+    padding-bottom: 110px;
+}
 #contact .half-width-2 {
     display:flex;
-    justify-content: center;  
+    justify-content: center; 
 }
 #contact h1 {
     font-family: 'Poppins', sans-serif;
@@ -194,10 +218,14 @@ header h1 span {
     font-size: 2.3em;
     line-height: 44px;
 }
-#contact h3 span {
+#contact h3 a{
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
-    line-height: 44px;
+    color:rgb(65, 99, 68);
+}
+#contact h4 {
+    background-color: rgb(187, 165, 165);
+    padding: 10px;
 }
 #contact p {
     font-family: 'Poppins', sans-serif;
@@ -209,7 +237,7 @@ header h1 span {
     display: block;
     text-decoration: none;
     text-align: center;
-    margin-bottom: 110px;
+   
  }
 #contact ul {
      display: flex;
@@ -352,7 +380,7 @@ footer img#Wyant-Notary-img3 {
        max-height:600px;
     }
     nav {
-        padding: 10% 10% 5% 10%;
+        padding: 10px 10px 5px 10px;
     }
     header h2 {
         font-size: 2.8em;
@@ -388,7 +416,7 @@ footer img#Wyant-Notary-img3 {
         border: 2px solid #c49075;
     }
     #contact .calendly {
-        border: 2px solid #c49075;
+       /* border: 2px solid #c49075;*/
         padding: 5px; 
         width:80%;
     }
