@@ -16,7 +16,7 @@
 - An informative mobile notary website to connect clients to a local notary. CSS and HTML are the main languages.
 
 ### Screenshot
-![](img/WyantNotaryScreenshot.png)
+![](img/NotaryScreenshot.png)
 
 
 ### Links
